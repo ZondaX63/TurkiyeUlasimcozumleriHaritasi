@@ -1,0 +1,84 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  background-color: #f4f7fc;
+}
+.il-isimleri {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  font-weight: bold;
+}
+.ulasim-listesi {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+  background-color: #f9f9f9;
+}
+
+.svg-turkiye-haritasi {
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f7fc; /* Arka plan rengi ekledik */
+  border-radius: 10px; /* Kenarlarda yuvarlaklık */
+}
+
+
+.svg-turkiye-haritasi svg:hover {
+  transform: scale(1.05); /* Haritayı üzerine gelince büyütme efekti */
+}
+
+.il-isimleri {
+  position: absolute;
+  z-index: 2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.il-isimleri div {
+  display: inline-block;
+  background: linear-gradient(135deg, #3498db, #1094F6); /* Şık bir geçişli arka plan */
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 30px; /* Yuvarlak köşe */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.il-isimleri div:hover {
+  background: #2980b9; /* Hover durumunda daha koyu bir mavi */
+  transform: translateY(-2px); /* Hover'da hafif yükselme efekti */
+}
+
+#svg-turkiye-haritasi path {
+  cursor: pointer;
+  fill: #4d4d4d; /* Daha yumuşak bir gri renk */
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+#svg-turkiye-haritasi path:hover {
+  fill: #1094F6; /* Hover durumunda mavi tonları */
+  transform: scale(1.05); /* Hover'da hafif büyütme efekti */
+}
+
+#guney-kibris {
+  pointer-events: none;
+}
+
+/* Mobil uyumluluk için responsive düzenlemeler */
+@media (max-width: 768px) {
+  .svg-turkiye-haritasi {
+    padding: 10px;
+  }
+  .il-isimleri div {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+}
